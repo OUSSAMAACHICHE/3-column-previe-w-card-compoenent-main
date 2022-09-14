@@ -1,0 +1,134 @@
+/* globle ruls  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Lenxend Deca", sans-serif;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* start media  */
+
+/* small media  */
+@media (min-width: 767px) {
+    .container {
+        width: 730px;
+    }
+}
+/* meduem media  */
+@media (min-width: 991px) {
+    .container {
+        width: 930px;
+    }
+}
+/* large media  */
+@media (min-width: 1200px) {
+    .container {
+        width: 930px;
+    }
+}
+/* end media  */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+h3 {
+    font-family: "Big Shoulders Display" sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);   
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container .card {
+    padding: 50px 50px;
+    max-height: 500px;
+    max-width: 300px;
+}
+.container .card:first-child {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container .card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+.container .card:last-child {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container .card p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+}
+.container .card:first-child p {
+    max-width: 90%;
+}
+.container .card:nth-child(2) p {
+    max-width: 95%;
+}
+
+
+
+.container .card .btn {
+    width: 150px;
+    height: 50px;
+    margin-top: 80px;
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 95%);
+    text-transform: capitalize;
+    background-color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+}
+.container .card:first-child .btn {
+    color:  hsl(31, 77%, 52%);;
+}
+.container .card:nth-child(2) .btn {
+    color: hsl(184, 100%, 22%);
+}
+.container .card:last-child .btn {
+    color: hsl(179, 100%, 13%);
+}
+.container .card .btn:hover {
+    background-color: transparent;    
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+@media (max-width: 767px) {
+    .card {
+        margin: auto;
+    }
+    .container .card:first-child {
+       border-radius: 10px 10px 0px 0px;
+    }
+    .container .card:nth-child(2) {
+        border-radius: 0;
+    }
+    .container .card:last-child {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
